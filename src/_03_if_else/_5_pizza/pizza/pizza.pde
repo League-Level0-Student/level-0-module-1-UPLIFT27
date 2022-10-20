@@ -3,6 +3,10 @@ PImage olive;
 PImage mushroom;
 void setup() {
     size(300,300); 
+background(300,300,300);
+fill(#FFBC79);
+ellipse(150,150,300,300);
+
 
 mushroom = loadImage("mushroom.png");
   olive = loadImage("olive.png");
@@ -10,26 +14,34 @@ mushroom = loadImage("mushroom.png");
 
 
 
-image(mushroom,50,50);
-image(pepperoni,50,50);
+
 }
 void draw() {
-background(300,300,300);
 
 
 
 
 
 
-if(mousePressed)
+
+
+
+
+
+
+if(mousePressed&&(mouseButton == RIGHT))
 {
-   image(pepperoni,200,200);
+   image(pepperoni,mouseX,mouseY);
 }
+if(mousePressed&&(mouseButton == LEFT))
+{
+image(olive , mouseX,mouseY);
 
-
-fill(#FFBC79);
-ellipse(150,150,300,300);
-  
+} 
+if(mousePressed&&(mouseButton ==CENTER))
+{
+  image(mushroom,mouseX,mouseY);
+}
 
 
 
