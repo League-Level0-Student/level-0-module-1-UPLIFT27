@@ -1,5 +1,7 @@
 package _05_for_loops._1_my_ages;
 
+import javax.swing.JOptionPane;
+
 public class MyAges {
 	public static void main(String[] args) {
 		
@@ -10,11 +12,20 @@ public class MyAges {
 		//        Start its value at zero.
 		
 		// Change the value of yourCurrentAge to match your age
-		int yourCurrentAge = 0;
+		int Ige = 0;
 				
 		
 		//  WHILE LOOP. Start a while loop to repeat while age <= yourCurrentAge
-				
+		String Age = JOptionPane.showInputDialog(null,"how old are you");
+		int yourCurrentAge = Integer.parseInt(Age);
+		
+	//	while(yourCurrentAge<Ige)
+	//	{
+	//	yourCurrentAge++;
+	//	JOptionPane.showMessageDialog(null, yourCurrentAge);
+	// l	}
+			
+		
 			//  Print the age variable
 		
 			//  Add one to the age variable
@@ -31,7 +42,13 @@ public class MyAges {
 		//  FOR LOOP. Start a for loop to repeat while age <= your age, like this:
 		//  for ( age=0; age <= yourAge; age +=1 ) {
 		
-			//  Print the age variable
+			
+		for(Ige=0;Ige <=yourCurrentAge; Ige+=1)
+		{
+		JOptionPane.showMessageDialog(null, Ige);
+		}
+		
+		//  Print the age variable
 		
 		//  End the for loop here
 		
